@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:4.4
+    container_name: mongo_container
+    ports:
+      - "27017:27017"  # Porta padrão do MongoDB
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongo_data:/data/db  # Persiste os dados no volume
+
+volumes:
+  mongo_data:
+    driver: local
