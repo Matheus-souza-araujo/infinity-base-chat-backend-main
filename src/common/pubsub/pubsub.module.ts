@@ -1,6 +1,6 @@
 import { Global, Module } from '@nestjs/common';
+import { PUB_SUB } from '../constants/injection-tokens';
 import { PubSub } from 'graphql-subscriptions';
-import { PUB_SUB } from '../constants/injections-token';
 
 @Global()
 @Module({
