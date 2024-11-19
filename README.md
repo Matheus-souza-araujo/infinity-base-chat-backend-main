@@ -35,6 +35,9 @@ $ pnpm install
 ## Running the app
 
 ```bash
+# create database
+$ docker compose up -d
+
 # development
 $ pnpm run start
 
